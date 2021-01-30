@@ -16,6 +16,7 @@ jobs:
           sudo gem install jekyll bundler
           bundle install
           bundle exec jekyll build
+          ls _site
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
